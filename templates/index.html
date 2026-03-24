@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canteen Order</title>
+</head>
+<body>
+
+<h2>🍴 Canteen Menu</h2>
+
+<ul>
+    {% for item, price in menu.items() %}
+        <li>{{ item }} - ₹{{ price }}</li>
+    {% endfor %}
+</ul>
+
+<h3>Place Order</h3>
+
+<form action="/order" method="post">
+    Name: <input type="text" name="name" required><br><br>
+
+    Item:
+    <select name="item">
+        {% for item in menu.keys() %}
+        <option value="{{ item }}">{{ item }}</option>
+        {% endfor %}
+    </select><br><br>
+
+    Quantity:
+    <input type="number" name="qty" required><br><br>
+
+    <button type="submit">Order</button>
+</form>
+
+<br>
+<a href="/admin">Go to Admin Panel</a>
+
+</body>
+</html>
