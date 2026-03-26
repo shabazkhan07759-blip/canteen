@@ -46,7 +46,8 @@ def order():
         "Burger": 80,
         "Pasta": 90,
         "Sandwich": 70,
-        "Cold Drink": 50
+        "Cold Drink": 50,
+        "tea": 30
     }
 
     price = prices.get(item, 0)
