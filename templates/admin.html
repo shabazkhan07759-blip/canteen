@@ -3,11 +3,11 @@
 <head>
     <title>Admin Panel</title>
 </head>
-<body>
+<body style="font-family:Arial; text-align:center;">
 
 <h2>📊 All Orders</h2>
 
-<table border="1">
+<table border="1" style="margin:auto;">
 <tr>
     <th>Order No</th>
     <th>Name</th>
@@ -18,16 +18,17 @@
 
 {% for order in orders %}
 <tr>
-    <td>{{ order.order_no }}</td>
-    <td>{{ order.name }}</td>
-    <td>{{ order.item }}</td>
-    <td>{{ order.qty }}</td>
-    <td>₹{{ order.total }}</td>
+    <td>{{ order['order_no'] }}</td>
+    <td>{{ order['name'] }}</td>
+    <td>{{ order['item'] }}</td>
+    <td>{{ order['qty'] }}</td>
+    <td>₹{{ order['total'] }}</td>
 </tr>
 {% endfor %}
 
 </table>
 
+<br>
 <a href="/">Back</a>
 
 </body>

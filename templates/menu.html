@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canteen Menu</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        form {
+            background: white;
+            padding: 20px;
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        input, select {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: green;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>🍽️ CANTEEN MENU</h1>
+
+<form action="/order" method="post">
+
+Name: <input type="text" name="name" required><br><br>
+
+Select Item:
+<select name="item">
+    <option>Pizza</option>
+    <option>Burger</option>
+    <option>Pasta</option>
+    <option>Sandwich</option>
+    <option>Cold Drink</option>
+</select>
+
+<br><br>
+
+Quantity: <input type="number" name="qty" required><br><br>
+
+<button type="submit">Order Now</button>
+
+</form>
+
+<br><br>
+<a href="/admin">Go to Admin Panel</a>
+
+</body>
+</html>

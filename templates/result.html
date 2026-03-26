@@ -3,17 +3,17 @@
 <head>
     <title>Order Result</title>
 </head>
-<body>
+<body style="text-align:center; font-family:Arial;">
 
-<h2>✅ Order Placed Successfully</h2>
+<h2>✅ Thank You for Your Order!</h2>
 
-<p>Order No: {{ order.order_no }}</p>
-<p>Name: {{ order.name }}</p>
-<p>Item: {{ order.item }}</p>
-<p>Quantity: {{ order.qty }}</p>
-<p>Total Price: ₹{{ order.total }}</p>
+<p><b>Order No:</b> {{ order.order_no }}</p>
+<p><b>Name:</b> {{ order.name }}</p>
+<p><b>Item:</b> {{ order.item }}</p>
+<p><b>Quantity:</b> {{ order.qty }}</p>
+<p><b>Total Bill:</b> ₹{{ order.total }}</p>
 
-<a href="/">Back</a>
+<a href="/">Order Again</a>
 
 </body>
 </html>
