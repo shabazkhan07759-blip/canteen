@@ -27,7 +27,7 @@ init_db()
 
 menu = {
     "Burger": 50,
-    "briyani": 100,
+    "roti": 100,
     "Sandwich": 40,
     "Tea": 10,
     "Coffee": 20
